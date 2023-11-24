@@ -2,18 +2,16 @@
  * Project Untitled
  */
 
-
 #include "Precipitacion.h"
 
 /**
  * Precipitacion implementation
  */
 
-
-void Precipitacion::set_precipitacion() {
-
+void Precipitacion::set_precipitacion()
+{
 }
 
-void Precipitacion::precipitacion() {
-
+void Precipitacion::precipitacion()
+{
 }
