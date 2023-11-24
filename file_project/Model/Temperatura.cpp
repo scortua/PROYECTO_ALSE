@@ -12,6 +12,6 @@ void Temperatura::set_temperatura()
 {
 }
 
-void Tempertatura::temperatura()
+void Temperatura::temperatura()
 {
 }
