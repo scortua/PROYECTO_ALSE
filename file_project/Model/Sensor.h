@@ -5,28 +5,22 @@
 #ifndef _SENSOR_H
 #define _SENSOR_H
 
+#include <vector>
+#include <random>
+
+using namespace std;
 class Sensor
 {
 public:
-    void escribir_bd();
+    float max(int, vector<float>);
 
-    void promedio();
+    float min(int, vector<float>);
 
-    void max();
-
-    void min();
-
-    void prom();
-
-    void getMax();
-
-    void getMin();
-
-    void getProm();
+    float prom(int, vector<float>);
 
 protected:
     int _TiempoMedida;
-    double _Medida;
+    double _Muestra;
 
 private:
     void sensor();

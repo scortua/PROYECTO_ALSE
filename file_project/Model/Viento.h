@@ -11,6 +11,7 @@ class Viento : public Sensor
 {
 public:
     void set_viento();
+    float get_viento();
 
 private:
     void viento();

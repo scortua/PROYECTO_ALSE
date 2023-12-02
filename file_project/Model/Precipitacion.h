@@ -11,6 +11,7 @@ class Precipitacion : public Sensor
 {
 public:
     void set_precipitacion();
+    float get_precipitacion();
 
 private:
     void precipitacion();

@@ -11,6 +11,7 @@ class Humedad : public Sensor
 {
 public:
     void set_humedad();
+    float get_humedad();
 
 private:
     void humedad();

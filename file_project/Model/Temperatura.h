@@ -6,12 +6,12 @@
 #define _TEMPERATURA_H
 
 #include "Sensor.h"
-#include "Sensor.h"
 
-class Temperatura : public Sensor, public Temperatura, public Sensor
+class Temperatura : public Sensor
 {
 public:
     void set_temperatura();
+    float get_temperatura();
 
 private:
     void temperatura();

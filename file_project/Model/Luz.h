@@ -11,6 +11,7 @@ class Luz : public Sensor
 {
 public:
     void set_luz();
+    float get_luz();
 
 private:
     void luz();
