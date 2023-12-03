@@ -1,0 +1,3 @@
+/home/alse_juan/projects/PROYECTO_ALSE/file_project/Model/build/CMakeFiles/rebuild_cache.dir
+/home/alse_juan/projects/PROYECTO_ALSE/file_project/Model/build/CMakeFiles/edit_cache.dir
+/home/alse_juan/projects/PROYECTO_ALSE/file_project/Model/build/CMakeFiles/proyecto.dir

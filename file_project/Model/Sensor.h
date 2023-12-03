@@ -9,14 +9,19 @@
 #include <random>
 
 using namespace std;
+
+
 class Sensor
 {
 public:
-    float max(int, vector<float>);
+    static float max(float, vector<float>);
 
-    float min(int, vector<float>);
+    static float min(float, vector<float>);
 
-    float prom(int, vector<float>);
+    static float prom(float, vector<float>);
+
+    float getRandomNumber(float, float);
+
 
 protected:
     int _TiempoMedida;

@@ -15,6 +15,7 @@ public:
 
 private:
     void temperatura();
+    float _Muestra;
 };
 
 #endif //_TEMPERATURA_H
