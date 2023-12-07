@@ -166,6 +166,30 @@ DB_sensor_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DB_sensor.dir/build.make CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.s
 .PHONY : DB_sensor_autogen/mocs_compilation.cpp.s
 
+ledindicator.o: ledindicator.cpp.o
+.PHONY : ledindicator.o
+
+# target to build an object file
+ledindicator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DB_sensor.dir/build.make CMakeFiles/DB_sensor.dir/ledindicator.cpp.o
+.PHONY : ledindicator.cpp.o
+
+ledindicator.i: ledindicator.cpp.i
+.PHONY : ledindicator.i
+
+# target to preprocess a source file
+ledindicator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DB_sensor.dir/build.make CMakeFiles/DB_sensor.dir/ledindicator.cpp.i
+.PHONY : ledindicator.cpp.i
+
+ledindicator.s: ledindicator.cpp.s
+.PHONY : ledindicator.s
+
+# target to generate assembly for a file
+ledindicator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DB_sensor.dir/build.make CMakeFiles/DB_sensor.dir/ledindicator.cpp.s
+.PHONY : ledindicator.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -227,6 +251,9 @@ help:
 	@echo "... DB_sensor_autogen/mocs_compilation.o"
 	@echo "... DB_sensor_autogen/mocs_compilation.i"
 	@echo "... DB_sensor_autogen/mocs_compilation.s"
+	@echo "... ledindicator.o"
+	@echo "... ledindicator.i"
+	@echo "... ledindicator.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

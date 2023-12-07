@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,9 +15,12 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void abrir_db();
 
 private slots:
     void on_cmd_Operacion_clicked();
+
+    void on_widget_customContextMenuRequested(const QPoint &pos);
 
 private:
     Ui::MainWindow *ui;

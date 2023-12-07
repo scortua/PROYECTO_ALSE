@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "DB_sensor_autogen"
   "CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/DB_sensor.dir/ledindicator.cpp.o"
+  "CMakeFiles/DB_sensor.dir/ledindicator.cpp.o.d"
   "CMakeFiles/DB_sensor.dir/main.cpp.o"
   "CMakeFiles/DB_sensor.dir/main.cpp.o.d"
   "CMakeFiles/DB_sensor.dir/mainwindow.cpp.o"
