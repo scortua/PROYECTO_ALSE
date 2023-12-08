@@ -33,11 +33,36 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+int MainWindow::callback(void *data, int columnCount, char **columnValues, char **columnNames)
+{
+    // Obtener el puntero a la matriz de resultados
+    QVector<QVector<QString>> *matrizResultados = static_cast<QVector<QVector<QString>> *>(data);
+
+    // Crear un vector para almacenar los valores de la fila actual
+    QVector<QString> fila;
+
+    // Iterar sobre las columnas y almacenar los valores en el vector
+    for (int i = 0; i < columnCount; ++i)
+    {
+        fila.push_back(columnValues[i] ? columnValues[i] : "NULL");
+    }
+
+    // Agregar la fila a la matriz
+    matrizResultados->push_back(fila);
+
+    // Devolver 0 para continuar procesando las filas
+    return 0;
+}
+
 void MainWindow::abrir_db()
 {
     char *zErrMsg = 0;
     int rc;
     double gh = 0.;
+
+    QString sqlRecuento = "SELECT COUNT(sensor) FROM sensores WHERE Temperatura IS NOT NULL";
+    rc = sqlite3_exec(db, sqlRecuento.toUtf8().constData(), callback, nullptr, &zErrMsg);
+
 
     /* Open database */
     rc = sqlite3_open("sensores.db", &db);
