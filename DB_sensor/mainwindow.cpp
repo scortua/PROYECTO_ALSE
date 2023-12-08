@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sqlite3.h>
+#include <QTimer>
 
 using Eigen::MatrixXd;
 
@@ -17,6 +18,14 @@ MainWindow::MainWindow(QWidget *parent)
 
    ui->ledT->setStyleSheet("QLineEdit { border-radius: 100px; }");
    ui->ledH->setStyleSheet("QLineEdit { border-radius: 100px; }");
+
+   timer = new QTimer(this);
+
+       // Conecta el temporizador a la función que manejará la actualización
+       connect(timer, &QTimer::timeout, this, &MainWindow::actualizarCadaMinuto);
+
+       // Configura el temporizador para que se ejecute cada minuto (60000 milisegundos)
+       timer->start(60000);
 }
 
 MainWindow::~MainWindow()
@@ -38,7 +47,7 @@ void MainWindow::abrir_db()
     sql = "SELECT WHERE  FROM sensores;";
 }
 
-void MainWindow::on_cmd_Operacion_clicked()
+void MainWindow::actualizarCadaMinuto()
 {
     // construir matriz de interfaz
     MatrixXd R(3, 6);

@@ -19,10 +19,11 @@ public:
 
 private slots:
     void on_cmd_Operacion_clicked();
-
-    void on_widget_customContextMenuRequested(const QPoint &pos);
+    void actualizarCadaMinuto();
+    //void on_widget_customContextMenuRequested(const QPoint &pos);
 
 private:
     Ui::MainWindow *ui;
+     QTimer *timer;  // Objeto QTimer
 };
 #endif // MAINWINDOW_H
