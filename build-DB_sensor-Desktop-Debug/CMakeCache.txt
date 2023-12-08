@@ -213,7 +213,7 @@ DB_sensor_BINARY_DIR:STATIC=/home/santiago/Projects/PROYECTO_ALSE/build-DB_senso
 DB_sensor_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-DB_sensor_SOURCE_DIR:STATIC=/home/santiago/Projects/PROYECTO_ALSE/DB_sensor
+DB_sensor_SOURCE_DIR:STATIC=/home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor
 
 //Skip Qt Creator's package manager auto-setup
 QT_CREATOR_SKIP_PACKAGE_MANAGER_SETUP:BOOL=OFF
@@ -305,7 +305,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/santiago/Projects/PROYECTO_ALSE/DB_sensor
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

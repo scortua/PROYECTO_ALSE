@@ -54,7 +54,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/santiago/Projects/PROYECTO_ALSE/DB_sensor
+CMAKE_SOURCE_DIR = /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug

@@ -1,0 +1,1 @@
+/usr/bin/g++ -O2 -g -DNDEBUG CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.o CMakeFiles/DB_sensor.dir/main.cpp.o CMakeFiles/DB_sensor.dir/mainwindow.cpp.o -o DB_sensor  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 
