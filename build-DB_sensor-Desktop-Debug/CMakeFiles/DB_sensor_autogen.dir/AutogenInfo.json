@@ -74,12 +74,6 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/santiago/Projects/PROYECTO_ALSE/DB_sensor/ledindicator.h",
-			"MU",
-			"EWIEGA46WW/moc_ledindicator.cpp",
-			null
-		],
-		[
 			"/home/santiago/Projects/PROYECTO_ALSE/DB_sensor/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -138,11 +132,6 @@
 	"SETTINGS_FILE" : "/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/CMakeFiles/DB_sensor_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"/home/santiago/Projects/PROYECTO_ALSE/DB_sensor/ledindicator.cpp",
-			"MU",
-			null
-		],
 		[
 			"/home/santiago/Projects/PROYECTO_ALSE/DB_sensor/main.cpp",
 			"MU",

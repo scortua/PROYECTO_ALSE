@@ -293,13 +293,11 @@ CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGroupBox \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgroupbox.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
@@ -312,13 +310,11 @@ CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStatusBar \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstatusbar.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
@@ -535,5 +531,4 @@ CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/QMatrix \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
+ /usr/include/sqlite3.h

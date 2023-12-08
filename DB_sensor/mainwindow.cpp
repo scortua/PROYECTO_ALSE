@@ -1,20 +1,22 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include <eigen3/Eigen/Dense>
-#include <QMatrix>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sqlite3.h>
-#include <QString>
 
 using Eigen::MatrixXd;
+
 sqlite3 *db;
 QString sql;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+   ui->setupUi(this);
+
+   ui->ledT->setStyleSheet("QLineEdit { border-radius: 100px; }");
+   ui->ledH->setStyleSheet("QLineEdit { border-radius: 100px; }");
 }
 
 MainWindow::~MainWindow()
@@ -64,4 +66,5 @@ void MainWindow::on_cmd_Operacion_clicked()
     ui->Lmin->setText(QString::number(R(0, 5)));
     ui->Lprom->setText(QString::number(R(1, 5)));
     ui->Lmax->setText(QString::number(R(2, 5)));
+
 }
