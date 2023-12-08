@@ -101,13 +101,60 @@ void MainWindow::actualizarCadaMinuto()
 
     R = abrir_db();
 
+    QPalette palT = ui->ledT->palette();
+    QPalette palh = ui->ledH->palette();
+
     ui->Tmin->setText(QString::number(R(0, 0)));
     ui->Tprom->setText(QString::number(R(1, 0)));
     ui->Tmax->setText(QString::number(R(2, 0)));
 
+    if((R(1,0) == -10) && (R(1,0) == 45))
+    {
+        palT.setColor(QPalette::Button, QColor(Qt::red));
+        ui->ledT->setAutoFillBackground(true);
+        ui->ledT->setPalette(palT);
+        ui->ledT->update();
+    }
+    else if((R(1,0) <= -5) && (R(1,0) >= 40))
+    {
+        palT.setColor(QPalette::Button, QColor(Qt::yellow));
+        ui->ledT->setAutoFillBackground(true);
+        ui->ledT->setPalette(palT);
+        ui->ledT->update();
+    }
+    else
+    {
+        palT.setColor(QPalette::Button, QColor(Qt::green));
+        ui->ledT->setAutoFillBackground(true);
+        ui->ledT->setPalette(palT);
+        ui->ledT->update();
+    }
+
     ui->Hmin->setText(QString::number(R(0, 1)));
     ui->Hprom->setText(QString::number(R(1, 1)));
     ui->Hmax->setText(QString::number(R(2, 1)));
+
+    if((R(1,1) == 100) && (R(1,1) == 0))
+    {
+        palT.setColor(QPalette::Button, QColor(Qt::red));
+        ui->ledH->setAutoFillBackground(true);
+        ui->ledH->setPalette(palT);
+        ui->ledH->update();
+    }
+    else if((R(1,1) <= 10) && (R(1,1) >= 90))
+    {
+        palT.setColor(QPalette::Button, QColor(Qt::yellow));
+        ui->ledH->setAutoFillBackground(true);
+        ui->ledH->setPalette(palT);
+        ui->ledH->update();
+    }
+    else
+    {
+        palT.setColor(QPalette::Button, QColor(Qt::green));
+        ui->ledH->setAutoFillBackground(true);
+        ui->ledH->setPalette(palT);
+        ui->ledH->update();
+    }
 
     ui->Vmin->setText(QString::number(R(0, 2)));
     ui->Vprom->setText(QString::number(R(1, 2)));

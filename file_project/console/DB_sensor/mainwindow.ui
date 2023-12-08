@@ -64,7 +64,7 @@
                  <widget class="QLineEdit" name="Tmin">
                   <property name="minimumSize">
                    <size>
-                    <width>50</width>
+                    <width>125</width>
                     <height>25</height>
                    </size>
                   </property>
@@ -73,6 +73,14 @@
                     <width>500</width>
                     <height>250</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>DejaVu Sans</family>
+                    <pointsize>14</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
                   </property>
                  </widget>
                 </item>
@@ -80,7 +88,7 @@
                  <widget class="QLineEdit" name="Tprom">
                   <property name="minimumSize">
                    <size>
-                    <width>50</width>
+                    <width>125</width>
                     <height>25</height>
                    </size>
                   </property>
@@ -89,6 +97,14 @@
                     <width>500</width>
                     <height>250</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>DejaVu Sans</family>
+                    <pointsize>14</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
                   </property>
                  </widget>
                 </item>
@@ -96,7 +112,7 @@
                  <widget class="QLineEdit" name="Tmax">
                   <property name="minimumSize">
                    <size>
-                    <width>50</width>
+                    <width>125</width>
                     <height>25</height>
                    </size>
                   </property>
@@ -105,6 +121,14 @@
                     <width>500</width>
                     <height>250</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>DejaVu Sans</family>
+                    <pointsize>14</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
                   </property>
                  </widget>
                 </item>
@@ -129,6 +153,12 @@
               </item>
               <item>
                <widget class="QLineEdit" name="ledT">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
                 <property name="minimumSize">
                  <size>
                   <width>100</width>
@@ -140,6 +170,9 @@
                   <width>100</width>
                   <height>100</height>
                  </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit { border-radius: 100px; }</string>
                 </property>
                </widget>
               </item>
@@ -190,7 +223,7 @@
                  <widget class="QLineEdit" name="Hmin">
                   <property name="minimumSize">
                    <size>
-                    <width>50</width>
+                    <width>125</width>
                     <height>25</height>
                    </size>
                   </property>
@@ -199,6 +232,14 @@
                     <width>500</width>
                     <height>250</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>DejaVu Sans</family>
+                    <pointsize>14</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
                   </property>
                  </widget>
                 </item>
@@ -216,6 +257,14 @@
                     <height>250</height>
                    </size>
                   </property>
+                  <property name="font">
+                   <font>
+                    <family>DejaVu Sans</family>
+                    <pointsize>14</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
                  </widget>
                 </item>
                 <item>
@@ -231,6 +280,14 @@
                     <width>500</width>
                     <height>250</height>
                    </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>DejaVu Sans</family>
+                    <pointsize>14</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
                   </property>
                  </widget>
                 </item>
@@ -255,6 +312,12 @@
               </item>
               <item>
                <widget class="QLineEdit" name="ledH">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
                 <property name="minimumSize">
                  <size>
                   <width>100</width>
@@ -266,6 +329,9 @@
                   <width>125</width>
                   <height>63</height>
                  </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit { border-radius: 100px; }</string>
                 </property>
                </widget>
               </item>
@@ -358,6 +424,14 @@
                   <height>250</height>
                  </size>
                 </property>
+                <property name="font">
+                 <font>
+                  <family>DejaVu Sans</family>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
                </widget>
               </item>
               <item>
@@ -374,6 +448,14 @@
                   <height>250</height>
                  </size>
                 </property>
+                <property name="font">
+                 <font>
+                  <family>DejaVu Sans</family>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
                </widget>
               </item>
               <item>
@@ -389,6 +471,14 @@
                   <width>500</width>
                   <height>250</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>DejaVu Sans</family>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
                 </property>
                </widget>
               </item>
@@ -434,6 +524,14 @@
                   <height>250</height>
                  </size>
                 </property>
+                <property name="font">
+                 <font>
+                  <family>DejaVu Sans</family>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
                </widget>
               </item>
               <item>
@@ -450,6 +548,14 @@
                   <height>250</height>
                  </size>
                 </property>
+                <property name="font">
+                 <font>
+                  <family>DejaVu Sans</family>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
                </widget>
               </item>
               <item>
@@ -465,6 +571,14 @@
                   <width>500</width>
                   <height>250</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>DejaVu Sans</family>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
                 </property>
                </widget>
               </item>
@@ -544,6 +658,14 @@
                   <height>250</height>
                  </size>
                 </property>
+                <property name="font">
+                 <font>
+                  <family>DejaVu Sans</family>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
                </widget>
               </item>
               <item>
@@ -560,6 +682,14 @@
                   <height>250</height>
                  </size>
                 </property>
+                <property name="font">
+                 <font>
+                  <family>DejaVu Sans</family>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
                </widget>
               </item>
               <item>
@@ -575,6 +705,14 @@
                   <width>500</width>
                   <height>250</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>DejaVu Sans</family>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
                 </property>
                </widget>
               </item>
@@ -620,6 +758,14 @@
                   <height>250</height>
                  </size>
                 </property>
+                <property name="font">
+                 <font>
+                  <family>DejaVu Sans</family>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
                </widget>
               </item>
               <item>
@@ -636,6 +782,14 @@
                   <height>250</height>
                  </size>
                 </property>
+                <property name="font">
+                 <font>
+                  <family>DejaVu Sans</family>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
                </widget>
               </item>
               <item>
@@ -651,6 +805,14 @@
                   <width>500</width>
                   <height>250</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>DejaVu Sans</family>
+                  <pointsize>14</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
                 </property>
                </widget>
               </item>
