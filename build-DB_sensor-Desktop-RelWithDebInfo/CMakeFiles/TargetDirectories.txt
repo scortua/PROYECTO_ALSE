@@ -1,4 +1,0 @@
-/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-RelWithDebInfo/CMakeFiles/DB_sensor.dir
-/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-RelWithDebInfo/CMakeFiles/edit_cache.dir
-/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-RelWithDebInfo/CMakeFiles/rebuild_cache.dir
-/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-RelWithDebInfo/CMakeFiles/DB_sensor_autogen.dir
