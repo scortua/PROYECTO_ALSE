@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor
+CMAKE_SOURCE_DIR = /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug
@@ -84,32 +84,32 @@ CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.s: cmake_force
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/DB_sensor_autogen/mocs_compilation.cpp -o CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/DB_sensor.dir/main.cpp.o: CMakeFiles/DB_sensor.dir/flags.make
-CMakeFiles/DB_sensor.dir/main.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/main.cpp
+CMakeFiles/DB_sensor.dir/main.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/main.cpp
 CMakeFiles/DB_sensor.dir/main.cpp.o: CMakeFiles/DB_sensor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DB_sensor.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DB_sensor.dir/main.cpp.o -MF CMakeFiles/DB_sensor.dir/main.cpp.o.d -o CMakeFiles/DB_sensor.dir/main.cpp.o -c /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/main.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DB_sensor.dir/main.cpp.o -MF CMakeFiles/DB_sensor.dir/main.cpp.o.d -o CMakeFiles/DB_sensor.dir/main.cpp.o -c /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/main.cpp
 
 CMakeFiles/DB_sensor.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DB_sensor.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/main.cpp > CMakeFiles/DB_sensor.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/main.cpp > CMakeFiles/DB_sensor.dir/main.cpp.i
 
 CMakeFiles/DB_sensor.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DB_sensor.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/main.cpp -o CMakeFiles/DB_sensor.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/main.cpp -o CMakeFiles/DB_sensor.dir/main.cpp.s
 
 CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: CMakeFiles/DB_sensor.dir/flags.make
-CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/mainwindow.cpp
+CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.cpp
 CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: CMakeFiles/DB_sensor.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DB_sensor.dir/mainwindow.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DB_sensor.dir/mainwindow.cpp.o -MF CMakeFiles/DB_sensor.dir/mainwindow.cpp.o.d -o CMakeFiles/DB_sensor.dir/mainwindow.cpp.o -c /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/mainwindow.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DB_sensor.dir/mainwindow.cpp.o -MF CMakeFiles/DB_sensor.dir/mainwindow.cpp.o.d -o CMakeFiles/DB_sensor.dir/mainwindow.cpp.o -c /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.cpp
 
 CMakeFiles/DB_sensor.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DB_sensor.dir/mainwindow.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/mainwindow.cpp > CMakeFiles/DB_sensor.dir/mainwindow.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.cpp > CMakeFiles/DB_sensor.dir/mainwindow.cpp.i
 
 CMakeFiles/DB_sensor.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DB_sensor.dir/mainwindow.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/mainwindow.cpp -o CMakeFiles/DB_sensor.dir/mainwindow.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.cpp -o CMakeFiles/DB_sensor.dir/mainwindow.cpp.s
 
 # Object files for target DB_sensor
 DB_sensor_OBJECTS = \
@@ -125,6 +125,7 @@ DB_sensor: CMakeFiles/DB_sensor.dir/main.cpp.o
 DB_sensor: CMakeFiles/DB_sensor.dir/mainwindow.cpp.o
 DB_sensor: CMakeFiles/DB_sensor.dir/build.make
 DB_sensor: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
+DB_sensor: /usr/lib/x86_64-linux-gnu/libQt5Sql.so.5.15.3
 DB_sensor: /usr/lib/x86_64-linux-gnu/libsqlite3.so
 DB_sensor: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
 DB_sensor: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
@@ -141,6 +142,6 @@ CMakeFiles/DB_sensor.dir/clean:
 .PHONY : CMakeFiles/DB_sensor.dir/clean
 
 CMakeFiles/DB_sensor.dir/depend:
-	cd /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/CMakeFiles/DB_sensor.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/CMakeFiles/DB_sensor.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DB_sensor.dir/depend
 

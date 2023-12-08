@@ -1,3 +1,0 @@
-/home/santiago/Projects/PROYECTO_ALSE/file_project/console/build/CMakeFiles/proyecto.dir
-/home/santiago/Projects/PROYECTO_ALSE/file_project/console/build/CMakeFiles/edit_cache.dir
-/home/santiago/Projects/PROYECTO_ALSE/file_project/console/build/CMakeFiles/rebuild_cache.dir

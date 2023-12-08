@@ -9,8 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/DB_sensor_autogen/mocs_compilation.cpp" "CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.o.d"
-  "/home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/main.cpp" "CMakeFiles/DB_sensor.dir/main.cpp.o" "gcc" "CMakeFiles/DB_sensor.dir/main.cpp.o.d"
-  "/home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/mainwindow.cpp" "CMakeFiles/DB_sensor.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/DB_sensor.dir/mainwindow.cpp.o.d"
+  "/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/main.cpp" "CMakeFiles/DB_sensor.dir/main.cpp.o" "gcc" "CMakeFiles/DB_sensor.dir/main.cpp.o.d"
+  "/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.cpp" "CMakeFiles/DB_sensor.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/DB_sensor.dir/mainwindow.cpp.o.d"
   )
 
 # Targets to which this target links.

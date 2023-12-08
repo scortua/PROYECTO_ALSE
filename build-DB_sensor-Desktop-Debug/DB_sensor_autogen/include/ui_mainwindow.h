@@ -45,6 +45,7 @@ public:
     QSpacerItem *horizontalSpacer;
     QLineEdit *ledT;
     QSpacerItem *horizontalSpacer_2;
+    QSpacerItem *horizontalSpacer_14;
     QSpacerItem *horizontalSpacer_5;
     QVBoxLayout *verticalLayout_8;
     QVBoxLayout *verticalLayout_6;
@@ -69,6 +70,7 @@ public:
     QLineEdit *Vprom;
     QLineEdit *Vmax;
     QSpacerItem *horizontalSpacer_6;
+    QSpacerItem *horizontalSpacer_15;
     QVBoxLayout *verticalLayout_3;
     QLabel *label_5;
     QHBoxLayout *horizontalLayout_2;
@@ -87,6 +89,7 @@ public:
     QLineEdit *Dprom;
     QLineEdit *Dmax;
     QSpacerItem *horizontalSpacer_7;
+    QSpacerItem *horizontalSpacer_16;
     QVBoxLayout *verticalLayout_4;
     QLabel *label_6;
     QHBoxLayout *horizontalLayout;
@@ -127,6 +130,10 @@ public:
         verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
+        QFont font;
+        font.setFamily(QString::fromUtf8("DejaVu Serif"));
+        font.setPointSize(11);
+        label->setFont(font);
 
         verticalLayout_5->addWidget(label);
 
@@ -136,12 +143,13 @@ public:
         Tmin->setObjectName(QString::fromUtf8("Tmin"));
         Tmin->setMinimumSize(QSize(125, 25));
         Tmin->setMaximumSize(QSize(500, 250));
-        QFont font;
-        font.setFamily(QString::fromUtf8("DejaVu Sans"));
-        font.setPointSize(14);
-        font.setBold(true);
-        font.setWeight(75);
-        Tmin->setFont(font);
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("DejaVu Sans"));
+        font1.setPointSize(14);
+        font1.setBold(true);
+        font1.setWeight(75);
+        Tmin->setFont(font1);
+        Tmin->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_6->addWidget(Tmin);
 
@@ -149,7 +157,8 @@ public:
         Tprom->setObjectName(QString::fromUtf8("Tprom"));
         Tprom->setMinimumSize(QSize(125, 25));
         Tprom->setMaximumSize(QSize(500, 250));
-        Tprom->setFont(font);
+        Tprom->setFont(font1);
+        Tprom->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_6->addWidget(Tprom);
 
@@ -157,7 +166,8 @@ public:
         Tmax->setObjectName(QString::fromUtf8("Tmax"));
         Tmax->setMinimumSize(QSize(125, 25));
         Tmax->setMaximumSize(QSize(500, 250));
-        Tmax->setFont(font);
+        Tmax->setFont(font1);
+        Tmax->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_6->addWidget(Tmax);
 
@@ -196,6 +206,10 @@ public:
 
         horizontalLayout_9->addLayout(verticalLayout_7);
 
+        horizontalSpacer_14 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_9->addItem(horizontalSpacer_14);
+
         horizontalSpacer_5 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_9->addItem(horizontalSpacer_5);
@@ -206,6 +220,7 @@ public:
         verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setFont(font);
 
         verticalLayout_6->addWidget(label_2);
 
@@ -215,7 +230,8 @@ public:
         Hmin->setObjectName(QString::fromUtf8("Hmin"));
         Hmin->setMinimumSize(QSize(125, 25));
         Hmin->setMaximumSize(QSize(500, 250));
-        Hmin->setFont(font);
+        Hmin->setFont(font1);
+        Hmin->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_5->addWidget(Hmin);
 
@@ -223,7 +239,8 @@ public:
         Hprom->setObjectName(QString::fromUtf8("Hprom"));
         Hprom->setMinimumSize(QSize(50, 25));
         Hprom->setMaximumSize(QSize(500, 250));
-        Hprom->setFont(font);
+        Hprom->setFont(font1);
+        Hprom->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_5->addWidget(Hprom);
 
@@ -231,7 +248,8 @@ public:
         Hmax->setObjectName(QString::fromUtf8("Hmax"));
         Hmax->setMinimumSize(QSize(50, 25));
         Hmax->setMaximumSize(QSize(500, 250));
-        Hmax->setFont(font);
+        Hmax->setFont(font1);
+        Hmax->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_5->addWidget(Hmax);
 
@@ -293,6 +311,7 @@ public:
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setFont(font);
 
         verticalLayout_2->addWidget(label_3);
 
@@ -302,7 +321,8 @@ public:
         Vmin->setObjectName(QString::fromUtf8("Vmin"));
         Vmin->setMinimumSize(QSize(50, 25));
         Vmin->setMaximumSize(QSize(500, 250));
-        Vmin->setFont(font);
+        Vmin->setFont(font1);
+        Vmin->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_4->addWidget(Vmin);
 
@@ -310,7 +330,8 @@ public:
         Vprom->setObjectName(QString::fromUtf8("Vprom"));
         Vprom->setMinimumSize(QSize(50, 25));
         Vprom->setMaximumSize(QSize(500, 250));
-        Vprom->setFont(font);
+        Vprom->setFont(font1);
+        Vprom->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_4->addWidget(Vprom);
 
@@ -318,7 +339,8 @@ public:
         Vmax->setObjectName(QString::fromUtf8("Vmax"));
         Vmax->setMinimumSize(QSize(50, 25));
         Vmax->setMaximumSize(QSize(500, 250));
-        Vmax->setFont(font);
+        Vmax->setFont(font1);
+        Vmax->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_4->addWidget(Vmax);
 
@@ -332,10 +354,18 @@ public:
 
         horizontalLayout_11->addItem(horizontalSpacer_6);
 
+        horizontalSpacer_15 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_11->addItem(horizontalSpacer_15);
+
         verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         label_5 = new QLabel(centralwidget);
         label_5->setObjectName(QString::fromUtf8("label_5"));
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("DejaVu Serif"));
+        font2.setPointSize(12);
+        label_5->setFont(font2);
 
         verticalLayout_3->addWidget(label_5);
 
@@ -345,7 +375,8 @@ public:
         Pmin->setObjectName(QString::fromUtf8("Pmin"));
         Pmin->setMinimumSize(QSize(50, 25));
         Pmin->setMaximumSize(QSize(500, 250));
-        Pmin->setFont(font);
+        Pmin->setFont(font1);
+        Pmin->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_2->addWidget(Pmin);
 
@@ -353,7 +384,8 @@ public:
         Pprom->setObjectName(QString::fromUtf8("Pprom"));
         Pprom->setMinimumSize(QSize(50, 25));
         Pprom->setMaximumSize(QSize(500, 250));
-        Pprom->setFont(font);
+        Pprom->setFont(font1);
+        Pprom->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_2->addWidget(Pprom);
 
@@ -361,7 +393,8 @@ public:
         Pmax->setObjectName(QString::fromUtf8("Pmax"));
         Pmax->setMinimumSize(QSize(50, 25));
         Pmax->setMaximumSize(QSize(500, 250));
-        Pmax->setFont(font);
+        Pmax->setFont(font1);
+        Pmax->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_2->addWidget(Pmax);
 
@@ -397,6 +430,7 @@ public:
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         label_4 = new QLabel(centralwidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setFont(font);
 
         verticalLayout->addWidget(label_4);
 
@@ -406,7 +440,8 @@ public:
         Dmin->setObjectName(QString::fromUtf8("Dmin"));
         Dmin->setMinimumSize(QSize(50, 25));
         Dmin->setMaximumSize(QSize(500, 250));
-        Dmin->setFont(font);
+        Dmin->setFont(font1);
+        Dmin->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_3->addWidget(Dmin);
 
@@ -414,7 +449,8 @@ public:
         Dprom->setObjectName(QString::fromUtf8("Dprom"));
         Dprom->setMinimumSize(QSize(50, 25));
         Dprom->setMaximumSize(QSize(500, 250));
-        Dprom->setFont(font);
+        Dprom->setFont(font1);
+        Dprom->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_3->addWidget(Dprom);
 
@@ -422,7 +458,8 @@ public:
         Dmax->setObjectName(QString::fromUtf8("Dmax"));
         Dmax->setMinimumSize(QSize(50, 25));
         Dmax->setMaximumSize(QSize(500, 250));
-        Dmax->setFont(font);
+        Dmax->setFont(font1);
+        Dmax->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout_3->addWidget(Dmax);
 
@@ -436,10 +473,20 @@ public:
 
         horizontalLayout_13->addItem(horizontalSpacer_7);
 
+        horizontalSpacer_16 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_13->addItem(horizontalSpacer_16);
+
         verticalLayout_4 = new QVBoxLayout();
         verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
         label_6 = new QLabel(centralwidget);
         label_6->setObjectName(QString::fromUtf8("label_6"));
+        QFont font3;
+        font3.setFamily(QString::fromUtf8("DejaVu Serif"));
+        font3.setPointSize(11);
+        font3.setBold(false);
+        font3.setWeight(50);
+        label_6->setFont(font3);
 
         verticalLayout_4->addWidget(label_6);
 
@@ -449,7 +496,8 @@ public:
         Lmin->setObjectName(QString::fromUtf8("Lmin"));
         Lmin->setMinimumSize(QSize(10, 5));
         Lmin->setMaximumSize(QSize(500, 250));
-        Lmin->setFont(font);
+        Lmin->setFont(font1);
+        Lmin->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout->addWidget(Lmin);
 
@@ -457,7 +505,8 @@ public:
         Lprom->setObjectName(QString::fromUtf8("Lprom"));
         Lprom->setMinimumSize(QSize(10, 5));
         Lprom->setMaximumSize(QSize(500, 250));
-        Lprom->setFont(font);
+        Lprom->setFont(font1);
+        Lprom->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout->addWidget(Lprom);
 
@@ -465,7 +514,8 @@ public:
         Lmax->setObjectName(QString::fromUtf8("Lmax"));
         Lmax->setMinimumSize(QSize(10, 5));
         Lmax->setMaximumSize(QSize(500, 250));
-        Lmax->setFont(font);
+        Lmax->setFont(font1);
+        Lmax->setStyleSheet(QString::fromUtf8("QLineEdit { text-align: center; }"));
 
         horizontalLayout->addWidget(Lmax);
 

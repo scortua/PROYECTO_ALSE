@@ -133,7 +133,7 @@ CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.o: DB_sensor_aut
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   /usr/include/c++/11/backward/auto_ptr.h \
-  /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/mainwindow.h \
+  /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -543,11 +543,15 @@ CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.o: DB_sensor_aut
   /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsql-config.h
 
-CMakeFiles/DB_sensor.dir/main.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/main.cpp \
+CMakeFiles/DB_sensor.dir/main.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/main.cpp \
   /usr/include/stdc-predef.h \
-  /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/mainwindow.h \
+  /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -1087,6 +1091,10 @@ CMakeFiles/DB_sensor.dir/main.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/file_
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsql-config.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h \
@@ -1098,9 +1106,9 @@ CMakeFiles/DB_sensor.dir/main.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/file_
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
 
-CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/mainwindow.cpp \
+CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.cpp \
   /usr/include/stdc-predef.h \
-  /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/mainwindow.h \
+  /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -1640,6 +1648,10 @@ CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: /home/santiago/Projects/PROYECTO_ALSE
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsql-config.h \
   DB_sensor_autogen/include/ui_mainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
@@ -1683,10 +1695,22 @@ CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: /home/santiago/Projects/PROYECTO_ALSE
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
-  /usr/include/sqlite3.h
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlQuery \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqlquery.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h
 
 
-/usr/include/sqlite3.h:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget:
 
@@ -1718,7 +1742,7 @@ CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: /home/santiago/Projects/PROYECTO_ALSE
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout:
 
-/home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/mainwindow.cpp:
+/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h:
 
@@ -1727,6 +1751,12 @@ CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: /home/santiago/Projects/PROYECTO_ALSE
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h:
 
 /usr/include/c++/11/bits/stl_list.h:
 
@@ -1765,6 +1795,10 @@ DB_sensor_autogen/include/ui_mainwindow.h:
 /usr/include/c++/11/cstddef:
 
 /usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h:
+
+/usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
@@ -1806,13 +1840,13 @@ DB_sensor_autogen/include/ui_mainwindow.h:
 
 /usr/include/string.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h:
-
 /usr/include/c++/11/bits/locale_classes.h:
 
 /usr/include/eigen3/Eigen/SVD:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h:
 
 /usr/include/c++/11/bits/basic_string.h:
 
@@ -1900,8 +1934,6 @@ DB_sensor_autogen/include/ui_mainwindow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h:
@@ -1920,7 +1952,11 @@ DB_sensor_autogen/include/ui_mainwindow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h:
 
-/home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/mainwindow.h:
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlQuery:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
@@ -1945,6 +1981,8 @@ DB_sensor_autogen/include/ui_mainwindow.h:
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/11/vector:
+
+/usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h:
 
 /usr/include/c++/11/bits/align.h:
 
@@ -1981,6 +2019,8 @@ DB_sensor_autogen/include/ui_mainwindow.h:
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/c++/11/iterator:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h:
 
@@ -2054,6 +2094,8 @@ DB_sensor_autogen/include/ui_mainwindow.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
+/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.h:
+
 /usr/include/c++/11/chrono:
 
 DB_sensor_autogen/mocs_compilation.cpp:
@@ -2071,6 +2113,8 @@ DB_sensor_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainertools_impl.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtSql/qtsql-config.h:
 
 /usr/include/stdint.h:
 
@@ -2236,10 +2280,6 @@ DB_sensor_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
-/usr/include/eigen3/Eigen/Cholesky:
-
-/usr/include/c++/11/bits/invoke.h:
-
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant:
@@ -2255,6 +2295,10 @@ DB_sensor_autogen/mocs_compilation.cpp:
 /usr/include/c++/11/bits/stl_algobase.h:
 
 /usr/include/c++/11/cwchar:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/main.cpp:
 
 /usr/include/locale.h:
 
@@ -2340,6 +2384,8 @@ DB_sensor_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/wctype.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h:
+
 /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:
@@ -2347,6 +2393,8 @@ DB_sensor_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h:
 
 /usr/include/c++/11/ratio:
+
+/usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase:
 
 /usr/include/eigen3/Eigen/src/Core/Swap.h:
 
@@ -2365,6 +2413,8 @@ DB_sensor_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtSql/qsqlquery.h:
 
 /usr/include/c++/11/bits/stl_pair.h:
 
@@ -2390,10 +2440,6 @@ DB_sensor_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qrefcount.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication:
-
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
@@ -2417,10 +2463,6 @@ DB_sensor_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/c++/11/bits/streambuf_iterator.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h:
 
@@ -2598,8 +2640,6 @@ DB_sensor_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/eigen3/Eigen/src/Core/IndexedView.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h:
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qhash.h:
@@ -2746,6 +2786,8 @@ DB_sensor_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h:
+
 /usr/include/eigen3/Eigen/src/Core/Random.h:
 
 /usr/include/eigen3/Eigen/src/Core/Replicate.h:
@@ -2766,9 +2808,11 @@ DB_sensor_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 
 /usr/include/eigen3/Eigen/src/LU/InverseImpl.h:
 
-/usr/include/eigen3/Eigen/Jacobi:
+/usr/include/c++/11/bits/invoke.h:
 
-/home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/main.cpp:
+/usr/include/eigen3/Eigen/Cholesky:
+
+/usr/include/eigen3/Eigen/Jacobi:
 
 /usr/include/eigen3/Eigen/src/Householder/Householder.h:
 
@@ -2833,7 +2877,3 @@ DB_sensor_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h:

@@ -1,7 +1,7 @@
 CMakeFiles/DB_sensor.dir/main.cpp.o: \
- /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/main.cpp \
+ /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/main.cpp \
  /usr/include/stdc-predef.h \
- /home/santiago/Projects/PROYECTO_ALSE/file_project/console/DB_sensor/mainwindow.h \
+ /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -488,6 +488,10 @@ CMakeFiles/DB_sensor.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlDatabase \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/qsqldatabase.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsql-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h \
