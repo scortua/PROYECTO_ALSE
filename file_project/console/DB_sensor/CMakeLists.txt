@@ -13,6 +13,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
+find_package(SQLite3 REQUIRED)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -26,17 +27,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
-# Define target properties for Android with Qt 6 as:
-#    set_property(TARGET DB_sensor APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
-# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
         add_library(DB_sensor SHARED
             ${PROJECT_SOURCES}
         )
-# Define properties for Android with Qt 5 after find_package() calls as:
-#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
         add_executable(DB_sensor
             ${PROJECT_SOURCES}
@@ -44,7 +39,8 @@ else()
     endif()
 endif()
 
-target_link_libraries(DB_sensor PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(DB_sensor PRIVATE Qt${QT_VERSION_MAJOR}::Widgets ${SQLite3_LIBRARIES})
+target_include_directories(DB_sensor PRIVATE ${SQLite3_INCLUDE_DIRS})
 
 set_target_properties(DB_sensor PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com

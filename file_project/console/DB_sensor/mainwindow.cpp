@@ -7,25 +7,23 @@
 #include <QTimer>
 
 using Eigen::MatrixXd;
-
-sqlite3 *db;
-QString sql;
+using namespace std;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
-   ui->setupUi(this);
+    ui->setupUi(this);
 
-   ui->ledT->setStyleSheet("QLineEdit { border-radius: 100px; }");
-   ui->ledH->setStyleSheet("QLineEdit { border-radius: 100px; }");
+    ui->ledT->setStyleSheet("QLineEdit { border-radius: 100px; }");
+    ui->ledH->setStyleSheet("QLineEdit { border-radius: 100px; }");
 
-   timer = new QTimer(this);
+    timer = new QTimer(this);
 
-       // Conecta el temporizador a la función que manejará la actualización
-       connect(timer, &QTimer::timeout, this, &MainWindow::actualizarCadaMinuto);
+    // Conecta el temporizador a la función que manejará la actualización
+    connect(timer, &QTimer::timeout, this, &MainWindow::actualizarCadaMinuto);
 
-       // Configura el temporizador para que se ejecute cada minuto (60000 milisegundos)
-       timer->start(60000);
+    // Configura el temporizador para que se ejecute cada minuto (60000 milisegundos)
+    timer->start(60000);
 }
 
 MainWindow::~MainWindow()
@@ -33,98 +31,67 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-MatrixXd MainWindow::abrir_db()
+MatrixXd abrir_db()
 {
     sqlite3 *db;
-    char *zErrMsg = 0;
-    int rc;
+    sqlite3_open("~/Projects/PROYECTO_ALSE/file_project/console/build/base_datos.db", &db);
 
-    // Abrir la base de datos
-    rc = sqlite3_open("base_datos.db", &db);  // Reemplaza con la ruta correcta
+    vector<vector<double>> results;
 
-    // Crear la SQL statement para obtener los últimos 6 registros
-    const char *sql = "SELECT MINIMO, PROMEDIO, MAXIMO FROM sensores ORDER BY ID DESC LIMIT 6;";
-
-    // Vector para almacenar los resultados
-    std::vector<std::vector<std::string>> matrizResultados;
-
-    // Función de devolución de llamada para procesar los resultados
-    auto callback = [](void *data, int columnCount, char **columnValues, char **columnNames) -> int {
-        auto &matrizResultados = *static_cast<std::vector<std::vector<std::string>> *>(data);
-
-        // Crear un vector para almacenar los valores de la fila actual
-        std::vector<std::string> fila;
-
-        // Iterar sobre las columnas y almacenar los valores en el vector
-        for (int i = 0; i < columnCount; ++i)
+    auto callback = [](void* data, int cols, char** values, char** names) -> int {
+        auto& results = *static_cast<vector<vector<double>>*>(data);
+        vector<double> row;
+        for (int i = 0; i < cols; ++i)
         {
-            fila.push_back(columnValues[i] ? columnValues[i] : "NULL");
+            row.push_back(std::stod(values[i]));
         }
-
-        // Agregar la fila a la matriz
-        matrizResultados.push_back(fila);
-
-        // Devolver 0 para continuar procesando las filas
+        results.push_back(row);
         return 0;
     };
 
-    // Ejecutar la consulta SQL y procesar los resultados
-    rc = sqlite3_exec(db, sql, callback, &matrizResultados, &zErrMsg);
+    char *errMsg;
+    sqlite3_exec(db, "SELECT MINIMO, PROMEDIO, MAXIMO FROM sensores ORDER BY ID DESC LIMIT 6;", callback, &results, &errMsg);
 
-    // Cerrar la base de datos después de usarla
     sqlite3_close(db);
 
-    // Obtener las dimensiones de la matriz de resultados
-    int filas = matrizResultados.size();
-    int columnas = (filas > 0) ? matrizResultados[0].size() : 0;
+    // Convert the results to an Eigen::MatrixXd
+    MatrixXd matrix(results.size(), results[0].size());
+    for (int i = 0; i < results.size(); ++i)
+        for (int j = 0; j < results[0].size(); ++j)
+            matrix(i, j) = results[i][j];
 
-    // Crear una matriz Eigen::MatrixXd con las mismas dimensiones
-    MatrixXd matriz(filas, columnas);
-
-    // Copiar los datos de la matriz de resultados a la matriz Eigen
-    for (int i = 0; i < filas; ++i)
-    {
-        for (int j = 0; j < columnas; ++j)
-        {
-            // Convertir cada elemento de string a double
-            matriz(i, j) = std::stod(matrizResultados[i][j]);
-        }
-    }
-
-    return matriz;
+    return matrix;
 }
 
 void MainWindow::actualizarCadaMinuto()
 {
     // construir matriz de interfaz
-    MatrixXd R(3, 6);
-
-    R = abrir_db();
+    MatrixXd R = abrir_db();
 
     QPalette palT = ui->ledT->palette();
-    QPalette palh = ui->ledH->palette();
+    QPalette palH = ui->ledH->palette();
 
     ui->Tmin->setText(QString::number(R(0, 0)));
     ui->Tprom->setText(QString::number(R(1, 0)));
     ui->Tmax->setText(QString::number(R(2, 0)));
 
-    if((R(1,0) == -10) && (R(1,0) == 45))
+    if ((R(1, 0) == -10) || (R(1, 0) == 45))
     {
-        palT.setColor(QPalette::Button, QColor(Qt::red));
+        palH.setColor(QPalette::Button, QColor(Qt::red));
         ui->ledT->setAutoFillBackground(true);
         ui->ledT->setPalette(palT);
         ui->ledT->update();
     }
-    else if((R(1,0) <= -5) && (R(1,0) >= 40))
+    else if ((R(1, 0) <= -5) || (R(1, 0) >= 40))
     {
-        palT.setColor(QPalette::Button, QColor(Qt::yellow));
+        palH.setColor(QPalette::Button, QColor(Qt::yellow));
         ui->ledT->setAutoFillBackground(true);
         ui->ledT->setPalette(palT);
         ui->ledT->update();
     }
     else
     {
-        palT.setColor(QPalette::Button, QColor(Qt::green));
+        palH.setColor(QPalette::Button, QColor(Qt::green));
         ui->ledT->setAutoFillBackground(true);
         ui->ledT->setPalette(palT);
         ui->ledT->update();
@@ -134,14 +101,14 @@ void MainWindow::actualizarCadaMinuto()
     ui->Hprom->setText(QString::number(R(1, 1)));
     ui->Hmax->setText(QString::number(R(2, 1)));
 
-    if((R(1,1) == 100) && (R(1,1) == 0))
+    if ((R(1, 1) == 100) || (R(1, 1) == 0))
     {
         palT.setColor(QPalette::Button, QColor(Qt::red));
         ui->ledH->setAutoFillBackground(true);
         ui->ledH->setPalette(palT);
         ui->ledH->update();
     }
-    else if((R(1,1) <= 10) && (R(1,1) >= 90))
+    else if ((R(1, 1) <= 10) || (R(1, 1) >= 90))
     {
         palT.setColor(QPalette::Button, QColor(Qt::yellow));
         ui->ledH->setAutoFillBackground(true);
@@ -171,5 +138,4 @@ void MainWindow::actualizarCadaMinuto()
     ui->Lmin->setText(QString::number(R(0, 5)));
     ui->Lprom->setText(QString::number(R(1, 5)));
     ui->Lmax->setText(QString::number(R(2, 5)));
-
 }

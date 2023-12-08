@@ -19,9 +19,7 @@ public:
     Eigen::MatrixXd abrir_db();
 
 private slots:
-    //void on_cmd_Operacion_clicked();
     void actualizarCadaMinuto();
-    //void on_widget_customContextMenuRequested(const QPoint &pos);
 
 private:
     Ui::MainWindow *ui;

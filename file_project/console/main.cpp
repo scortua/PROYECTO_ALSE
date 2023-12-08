@@ -3,6 +3,7 @@
 #include <chrono>
 #include <ctime>
 #include <string>
+#include <vector>
 
 #include "Sensor.h"
 #include "Temperatura.h"
@@ -14,12 +15,12 @@
 
 using namespace std;
 
-std::string get_current_date()
+string get_current_date()
 {
-    std::time_t now = std::time(nullptr);
-    char date_str[11];
-    std::strftime(date_str, sizeof(date_str), "%Y-%m-%d", std::localtime(&now));
-    return std::string(date_str);
+    time_t now = time(nullptr);
+    char date_str[20];
+    strftime(date_str, sizeof(date_str), "%Y-%m-%d %H:%M:%S", localtime(&now));
+    return string(date_str);
 }
 
 int main(int argc, char **argv)
@@ -51,7 +52,7 @@ int main(int argc, char **argv)
 
     rc = sqlite3_exec(db, sqlstr.c_str(), 0, 0, &zErrMsg);
 
-    sqlite3_close(db);
+    // sqlite3_close(db);
 
     // crear los sensores
     vector<float> temp;
@@ -61,7 +62,8 @@ int main(int argc, char **argv)
     vector<float> prec;
     vector<float> luz;
 
-    for (int i = 0; i < (60 / ts); i++) // Fix: Changed i+ts to i+=ts
+    // llenar los sensores
+    for (int i = 0; i < (60 / ts); i++)
     {
         Temperatura t;
         t.set_temperatura();
@@ -87,7 +89,7 @@ int main(int argc, char **argv)
         l.set_luz();
         luz.push_back(l.get_luz());
         /*
-
+            // verificacion de los sensores
             cout << "Temperatura " << i << ": " << temp[i] << endl;
             cout << "Humedad " << i << ": " << hum[i] << endl;
             cout << "Velocidad " << i << ": " << vel[i] << endl;
@@ -98,29 +100,29 @@ int main(int argc, char **argv)
         */
     }
 
-    float minTemp = Sensor::min(60 / ts, temp);   // Fix: Added :: before min
-    float maxTemp = Sensor::max(60 / ts, temp);   // Fix: Added :: before max
-    float promTemp = Sensor::prom(60 / ts, temp); // Fix: Added :: before prom
+    float minTemp = Sensor::min(60 / ts, temp);
+    float maxTemp = Sensor::max(60 / ts, temp);
+    float promTemp = Sensor::prom(60 / ts, temp);
 
-    float minHum = Sensor::min(60 / ts, hum);   // Fix: Added :: before min
-    float maxHum = Sensor::max(60 / ts, hum);   // Fix: Added :: before max
-    float promHum = Sensor::prom(60 / ts, hum); // Fix: Added :: before prom
+    float minHum = Sensor::min(60 / ts, hum);
+    float maxHum = Sensor::max(60 / ts, hum);
+    float promHum = Sensor::prom(60 / ts, hum);
 
-    float minVel = Sensor::min(60 / ts, vel);   // Fix: Added :: before min
-    float maxVel = Sensor::max(60 / ts, vel);   // Fix: Added :: before max
-    float promVel = Sensor::prom(60 / ts, vel); // Fix: Added :: before prom
+    float minVel = Sensor::min(60 / ts, vel);
+    float maxVel = Sensor::max(60 / ts, vel);
+    float promVel = Sensor::prom(60 / ts, vel);
 
-    float minViento = Sensor::min(60 / ts, viento);   // Fix: Added :: before min
-    float maxViento = Sensor::max(60 / ts, viento);   // Fix: Added :: before max
-    float promViento = Sensor::prom(60 / ts, viento); // Fix: Added :: before prom
+    float minViento = Sensor::min(60 / ts, viento);
+    float maxViento = Sensor::max(60 / ts, viento);
+    float promViento = Sensor::prom(60 / ts, viento);
 
-    float minPrec = Sensor::min(60 / ts, prec);   // Fix: Added :: before min
-    float maxPrec = Sensor::max(60 / ts, prec);   // Fix: Added :: before max
-    float promPrec = Sensor::prom(60 / ts, prec); // Fix: Added :: before prom
+    float minPrec = Sensor::min(60 / ts, prec);
+    float maxPrec = Sensor::max(60 / ts, prec);
+    float promPrec = Sensor::prom(60 / ts, prec);
 
-    float minLuz = Sensor::min(60 / ts, luz);   // Fix: Added :: before min
-    float maxLuz = Sensor::max(60 / ts, luz);   // Fix: Added :: before max
-    float promLuz = Sensor::prom(60 / ts, luz); // Fix: Added :: before prom
+    float minLuz = Sensor::min(60 / ts, luz);
+    float maxLuz = Sensor::max(60 / ts, luz);
+    float promLuz = Sensor::prom(60 / ts, luz);
 
     cout << "Tiempo de muestreo: " << ts << " .Numero de muestreas: " << 60 / ts << endl;
     cout << "Fecha: " << fecha << endl;
@@ -132,7 +134,7 @@ int main(int argc, char **argv)
     cout << "Precipitacion: " << minPrec << " " << promPrec << " " << maxPrec << endl;
     cout << "Luz: " << minLuz << " " << promLuz << " " << maxLuz << endl;
 
-    /* Create SQL statement */
+    // insertar los datos en la base de datos
     sql = "INSERT INTO sensores (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
           "VALUES ('Temperatura', " +
           to_string(minTemp) + ", " + to_string(promTemp) + ", " + to_string(maxTemp) + ", '" + fecha + "'); "
@@ -166,5 +168,6 @@ int main(int argc, char **argv)
     }
 
     sqlite3_close(db);
+    cout << "Base de datos creada" << endl;
     return 0;
 }
