@@ -16,9 +16,6 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    ui->ledT->setStyleSheet("QLineEdit { border-radius: 100px; }");
-    ui->ledH->setStyleSheet("QLineEdit { border-radius: 100px; }");
-
     timer = new QTimer(this);
 
     // Conecta el temporizador a la función que manejará la actualización
@@ -37,11 +34,10 @@ MatrixXd MainWindow::abrir_db()
 {
     MatrixXd R(6, 3);
 
-    QString path;
-    db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("base_datos.db");
+    db = QSqlDatabase::addDatabase("QSQLITE"); // agrega la base de datos a qt
+    db.setDatabaseName("base_datos.db"); // crea una conexion con la base de datos
 
-    if (db.open())
+    if (db.open()) // abre la base de datos
     {
         qDebug() << "Base de datos abierta";
     }
@@ -94,6 +90,10 @@ void MainWindow::actualizarCadaMinuto()
     ui->Tprom->setText(QString::number(R(0, 1)));
     ui->Tmax->setText(QString::number(R(0, 2)));
 
+    QRect rectT(QPoint(), ui->ledT->size());
+    QRegion region(rectT,QRegion::Ellipse);
+    ui->ledT->setMask(region);
+
     QString color;
     if (R(0,1) == 45 || R(0,1) == -10)
         color = "red";
@@ -109,6 +109,10 @@ void MainWindow::actualizarCadaMinuto()
     ui->Hmin->setText(QString::number(R(1, 0)));
     ui->Hprom->setText(QString::number(R(1, 1)));
     ui->Hmax->setText(QString::number(R(1, 2)));
+
+    QRect rectH(QPoint(), ui->ledH->size());
+    QRegion ledH(rectH,QRegion::Ellipse);
+    ui->ledH->setMask(region);
 
     if (R(1,1) == 100 || R(1,1) == 0)
         color = "red";

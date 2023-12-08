@@ -1,4 +1,4 @@
-# Install script for directory: /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor
+# Install script for directory: /home/santiago/Projects/PROYECTO_ALSE/DB_sensor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

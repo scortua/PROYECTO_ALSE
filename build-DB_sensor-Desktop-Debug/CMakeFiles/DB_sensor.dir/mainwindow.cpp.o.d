@@ -1,7 +1,7 @@
 CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: \
- /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.cpp \
+ /home/santiago/Projects/PROYECTO_ALSE/DB_sensor/mainwindow.cpp \
  /usr/include/stdc-predef.h \
- /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.h \
+ /home/santiago/Projects/PROYECTO_ALSE/DB_sensor/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \

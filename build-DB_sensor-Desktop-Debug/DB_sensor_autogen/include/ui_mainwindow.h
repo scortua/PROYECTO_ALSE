@@ -190,9 +190,8 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(ledT->sizePolicy().hasHeightForWidth());
         ledT->setSizePolicy(sizePolicy);
-        ledT->setMinimumSize(QSize(100, 100));
+        ledT->setMinimumSize(QSize(100, 150));
         ledT->setBaseSize(QSize(100, 100));
-        ledT->setStyleSheet(QString::fromUtf8("QLineEdit { border-radius: 100px; }"));
 
         horizontalLayout_7->addWidget(ledT);
 
@@ -269,9 +268,8 @@ public:
         ledH->setObjectName(QString::fromUtf8("ledH"));
         sizePolicy.setHeightForWidth(ledH->sizePolicy().hasHeightForWidth());
         ledH->setSizePolicy(sizePolicy);
-        ledH->setMinimumSize(QSize(100, 100));
+        ledH->setMinimumSize(QSize(100, 150));
         ledH->setBaseSize(QSize(125, 63));
-        ledH->setStyleSheet(QString::fromUtf8("QLineEdit { border-radius: 100px; }"));
 
         horizontalLayout_8->addWidget(ledH);
 

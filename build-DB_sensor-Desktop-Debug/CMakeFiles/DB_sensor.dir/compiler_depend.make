@@ -133,7 +133,7 @@ CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.o: DB_sensor_aut
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   /usr/include/c++/11/backward/auto_ptr.h \
-  /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.h \
+  /home/santiago/Projects/PROYECTO_ALSE/DB_sensor/mainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -549,9 +549,9 @@ CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.o: DB_sensor_aut
   /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsqlglobal.h \
   /usr/include/x86_64-linux-gnu/qt5/QtSql/qtsql-config.h
 
-CMakeFiles/DB_sensor.dir/main.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/main.cpp \
+CMakeFiles/DB_sensor.dir/main.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/DB_sensor/main.cpp \
   /usr/include/stdc-predef.h \
-  /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.h \
+  /home/santiago/Projects/PROYECTO_ALSE/DB_sensor/mainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -1106,9 +1106,9 @@ CMakeFiles/DB_sensor.dir/main.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/conso
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
 
-CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.cpp \
+CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: /home/santiago/Projects/PROYECTO_ALSE/DB_sensor/mainwindow.cpp \
   /usr/include/stdc-predef.h \
-  /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.h \
+  /home/santiago/Projects/PROYECTO_ALSE/DB_sensor/mainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -1742,7 +1742,7 @@ CMakeFiles/DB_sensor.dir/mainwindow.cpp.o: /home/santiago/Projects/PROYECTO_ALSE
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout:
 
-/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.cpp:
+/home/santiago/Projects/PROYECTO_ALSE/DB_sensor/mainwindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h:
 
@@ -1840,6 +1840,10 @@ DB_sensor_autogen/include/ui_mainwindow.h:
 
 /usr/include/string.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h:
+
 /usr/include/c++/11/bits/locale_classes.h:
 
 /usr/include/eigen3/Eigen/SVD:
@@ -1934,6 +1938,8 @@ DB_sensor_autogen/include/ui_mainwindow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h:
 
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h:
@@ -1952,9 +1958,9 @@ DB_sensor_autogen/include/ui_mainwindow.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h:
+/home/santiago/Projects/PROYECTO_ALSE/DB_sensor/mainwindow.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h:
+/usr/include/c++/11/cstdlib:
 
 /usr/include/x86_64-linux-gnu/qt5/QtSql/QSqlQuery:
 
@@ -2094,13 +2100,9 @@ DB_sensor_autogen/include/ui_mainwindow.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.h:
-
 /usr/include/c++/11/chrono:
 
 DB_sensor_autogen/mocs_compilation.cpp:
-
-/usr/include/c++/11/cstdlib:
 
 /usr/include/eigen3/Eigen/Householder:
 
@@ -2295,10 +2297,6 @@ DB_sensor_autogen/mocs_compilation.cpp:
 /usr/include/c++/11/bits/stl_algobase.h:
 
 /usr/include/c++/11/cwchar:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/main.cpp:
 
 /usr/include/locale.h:
 
@@ -2877,3 +2875,5 @@ DB_sensor_autogen/EWIEGA46WW/moc_mainwindow.cpp:
 /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+
+/home/santiago/Projects/PROYECTO_ALSE/DB_sensor/main.cpp:

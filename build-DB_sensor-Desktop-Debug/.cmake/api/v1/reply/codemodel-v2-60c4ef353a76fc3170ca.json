@@ -41,7 +41,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "DB_sensor::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DB_sensor-Debug-b19545b72778ba4af050.json",
+					"jsonFile" : "target-DB_sensor-Debug-001604a71415adf36c8d.json",
 					"name" : "DB_sensor",
 					"projectIndex" : 0
 				},
@@ -59,7 +59,7 @@
 	"paths" : 
 	{
 		"build" : "/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug",
-		"source" : "/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor"
+		"source" : "/home/santiago/Projects/PROYECTO_ALSE/DB_sensor"
 	},
 	"version" : 
 	{

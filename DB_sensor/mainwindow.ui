@@ -177,7 +177,7 @@
                 <property name="minimumSize">
                  <size>
                   <width>100</width>
-                  <height>100</height>
+                  <height>150</height>
                  </size>
                 </property>
                 <property name="baseSize">
@@ -185,9 +185,6 @@
                   <width>100</width>
                   <height>100</height>
                  </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QLineEdit { border-radius: 100px; }</string>
                 </property>
                </widget>
               </item>
@@ -364,7 +361,7 @@
                 <property name="minimumSize">
                  <size>
                   <width>100</width>
-                  <height>100</height>
+                  <height>150</height>
                  </size>
                 </property>
                 <property name="baseSize">
@@ -372,9 +369,6 @@
                   <width>125</width>
                   <height>63</height>
                  </size>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QLineEdit { border-radius: 100px; }</string>
                 </property>
                </widget>
               </item>

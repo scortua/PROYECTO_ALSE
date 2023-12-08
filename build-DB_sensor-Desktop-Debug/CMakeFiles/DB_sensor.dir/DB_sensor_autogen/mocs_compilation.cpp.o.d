@@ -114,7 +114,7 @@ CMakeFiles/DB_sensor.dir/DB_sensor_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
- /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/DB_sensor_autogen/EWIEGA46WW/../../../console/DB_sensor/mainwindow.h \
+ /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/DB_sensor_autogen/EWIEGA46WW/../../../DB_sensor/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \

@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor"
+			"value" : "/home/santiago/Projects/PROYECTO_ALSE/DB_sensor"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1123,7 +1123,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor"
+			"value" : "/home/santiago/Projects/PROYECTO_ALSE/DB_sensor"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_SQLite3",

@@ -2,11 +2,11 @@
 	"BUILD_DIR" : "/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/DB_sensor_autogen",
 	"CMAKE_BINARY_DIR" : "/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug",
 	"CMAKE_CURRENT_BINARY_DIR" : "/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/santiago/Projects/PROYECTO_ALSE/DB_sensor",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/CMakeLists.txt",
+		"/home/santiago/Projects/PROYECTO_ALSE/DB_sensor/CMakeLists.txt",
 		"/usr/share/qtcreator/package-manager/auto-setup.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeSystem.cmake.in",
@@ -138,13 +138,13 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Sql/Qt5SqlConfig.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor",
+	"CMAKE_SOURCE_DIR" : "/home/santiago/Projects/PROYECTO_ALSE/DB_sensor",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.h",
+			"/home/santiago/Projects/PROYECTO_ALSE/DB_sensor/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
@@ -164,7 +164,7 @@
 	"MOC_INCLUDES" : 
 	[
 		"/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug",
-		"/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor",
+		"/home/santiago/Projects/PROYECTO_ALSE/DB_sensor",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
 		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
@@ -204,12 +204,12 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/main.cpp",
+			"/home/santiago/Projects/PROYECTO_ALSE/DB_sensor/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.cpp",
+			"/home/santiago/Projects/PROYECTO_ALSE/DB_sensor/mainwindow.cpp",
 			"MU",
 			null
 		]

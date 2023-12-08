@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor
+CMAKE_SOURCE_DIR = /home/santiago/Projects/PROYECTO_ALSE/DB_sensor
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug
@@ -83,6 +83,6 @@ CMakeFiles/DB_sensor_autogen.dir/clean:
 .PHONY : CMakeFiles/DB_sensor_autogen.dir/clean
 
 CMakeFiles/DB_sensor_autogen.dir/depend:
-	cd /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/CMakeFiles/DB_sensor_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/santiago/Projects/PROYECTO_ALSE/DB_sensor /home/santiago/Projects/PROYECTO_ALSE/DB_sensor /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/CMakeFiles/DB_sensor_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DB_sensor_autogen.dir/depend
 

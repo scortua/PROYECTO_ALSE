@@ -1,4 +1,4 @@
-/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/DB_sensor_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/santiago/Projects/PROYECTO_ALSE/console/DB_sensor/mainwindow.h \
+/home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/DB_sensor_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/santiago/Projects/PROYECTO_ALSE/DB_sensor/mainwindow.h \
   /home/santiago/Projects/PROYECTO_ALSE/build-DB_sensor-Desktop-Debug/DB_sensor_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
