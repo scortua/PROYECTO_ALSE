@@ -13,7 +13,17 @@
 #include "Precipitacion.h"
 #include "Luz.h"
 
+#include <mysql/mysql.h>
+
 using namespace std;
+
+MYSQL *connection = mysql_init(NULL);
+int query_state;
+
+#define HOST "db4free.net"       // Reemplaza "tu_servidor" con la dirección IP o el nombre del host de tu servidor MySQL
+#define USER "cortua_abellita"   // Reemplaza "tu_usuario" con tu nombre de usuario de MySQL
+#define PASSWD "cortua_abellita" // Reemplaza "tu_contraseña" con tu contraseña de MySQL
+#define DB "base_datos_alse"
 
 string get_current_date()
 {
@@ -34,7 +44,7 @@ int main(int argc, char **argv)
     int ts = atoi(argv[1]); // tiempo de muestreo
 
     /* crear la tabla de sensores */
-    rc = sqlite3_open("base_datos.db", &db);
+    rc = sqlite3_open("db_name.db", &db);
 
     if (rc != 0)
     {
@@ -43,10 +53,10 @@ int main(int argc, char **argv)
     }
     else
     {
-        fprintf(stdout, "Opened database successfully\n");
+        fprintf(stdout, "Opened database successfully\n\n");
     }
 
-    sqlstr = "CREATE TABLE IF NOT EXISTS sensores (ID INTEGER PRIMARY KEY AUTOINCREMENT, SENSOR TEXT NOT NULL,"
+    sqlstr = "CREATE TABLE IF NOT EXISTS sensores_pc (ID INTEGER PRIMARY KEY AUTOINCREMENT, SENSOR TEXT NOT NULL,"
              "MINIMO INTEGER NOT NULL, PROMEDIO INTEGER NOT NULL,"
              "MAXIMO INTEGER NOT NULL, FECHA TEXT NOT NULL);";
 
@@ -125,7 +135,7 @@ int main(int argc, char **argv)
     float promLuz = Sensor::prom(60 / ts, luz);
 
     cout << "Tiempo de muestreo: " << ts << " .Numero de muestreas: " << 60 / ts << endl;
-    cout << "Fecha: " << fecha << endl;
+    cout << "Fecha: " << fecha << "\n\n";
 
     cout << "Temperatura: " << minTemp << " " << promTemp << " " << maxTemp << endl;
     cout << "Humedad: " << minHum << " " << promHum << " " << maxHum << endl;
@@ -135,22 +145,22 @@ int main(int argc, char **argv)
     cout << "Luz: " << minLuz << " " << promLuz << " " << maxLuz << endl;
 
     // insertar los datos en la base de datos
-    sql = "INSERT INTO sensores (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
+    sql = "INSERT INTO sensores_pc (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
           "VALUES ('Temperatura', " +
           to_string(minTemp) + ", " + to_string(promTemp) + ", " + to_string(maxTemp) + ", '" + fecha + "'); "
-                                                                                                        "INSERT INTO sensores (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
+                                                                                                        "INSERT INTO sensores_pc (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
                                                                                                         "VALUES ('Humedad', " +
           to_string(minHum) + ", " + to_string(promHum) + ", " + to_string(maxHum) + ", '" + fecha + "'); "
-                                                                                                     "INSERT INTO sensores (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
+                                                                                                     "INSERT INTO sensores_pc (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
                                                                                                      "VALUES ('Velocidad', " +
           to_string(minVel) + ", " + to_string(promVel) + ", " + to_string(maxVel) + ", '" + fecha + "'); "
-                                                                                                     "INSERT INTO sensores (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
+                                                                                                     "INSERT INTO sensores_pc (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
                                                                                                      "VALUES ('Viento', " +
           to_string(minViento) + ", " + to_string(promViento) + ", " + to_string(maxViento) + ", '" + fecha + "'); "
-                                                                                                              "INSERT INTO sensores (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
+                                                                                                              "INSERT INTO sensores_pc (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
                                                                                                               "VALUES ('Precipitacion', " +
           to_string(minPrec) + ", " + to_string(promPrec) + ", " + to_string(maxPrec) + ", '" + fecha + "'); "
-                                                                                                        "INSERT INTO sensores (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
+                                                                                                        "INSERT INTO sensores_pc (SENSOR, MINIMO, PROMEDIO, MAXIMO, FECHA) "
                                                                                                         "VALUES ('Luz', " +
           to_string(minLuz) + ", " + to_string(promLuz) + ", " + to_string(maxLuz) + ", '" + fecha + "'); ";
 
@@ -169,5 +179,50 @@ int main(int argc, char **argv)
 
     sqlite3_close(db);
     cout << "Base de datos creada" << endl;
+
+    // Conectar a la base de datos remota
+    if (mysql_real_connect(connection, HOST, USER, PASSWD, DB, 0, NULL, 0) == NULL)
+    {
+        cout << "Failed to connect to database: " << mysql_error(connection) << endl;
+        return 1;
+    }
+    else
+    {
+        cout << "Connected to database successfully" << endl;
+    }
+
+    query_state = mysql_query(connection, "SELECT * FROM sensores");
+
+    cout << "\n\n\n";
+    if (query_state != 0)
+    {
+        cout << "MySQL query error: " << mysql_error(connection) << endl;
+    }
+    else
+    {
+        MYSQL_RES *result = mysql_store_result(connection);
+        if (result == NULL)
+        {
+            cout << "MySQL store result error: " << mysql_error(connection) << endl;
+        }
+        else
+        {
+            int num_fields = mysql_num_fields(result);
+            MYSQL_ROW row;
+            while ((row = mysql_fetch_row(result)))
+            {
+                for (int i = 0; i < num_fields; i++)
+                {
+                    cout << row[i] << " ";
+                }
+                cout << endl;
+            }
+            mysql_free_result(result);
+        }
+    }
+
+    mysql_close(connection);
+    cout << "\nMySQL CLIENT database closed\n";
+
     return 0;
 }
