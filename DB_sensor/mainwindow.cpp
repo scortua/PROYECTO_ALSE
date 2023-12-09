@@ -35,7 +35,7 @@ MatrixXd MainWindow::abrir_db()
     MatrixXd R(6, 3);
 
     db = QSqlDatabase::addDatabase("QSQLITE"); // agrega la base de datos a qt
-    db.setDatabaseName("base_datos.db"); // crea una conexion con la base de datos
+    db.setDatabaseName("../base_datos.db"); // crea una conexion con la base de datos
 
     if (db.open()) // abre la base de datos
     {

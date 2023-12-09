@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/proyecto.dir/main.cpp.o CMakeFiles/proyecto.dir/Sensor.cpp.o CMakeFiles/proyecto.dir/Temperatura.cpp.o CMakeFiles/proyecto.dir/Humedad.cpp.o CMakeFiles/proyecto.dir/Precipitacion.cpp.o CMakeFiles/proyecto.dir/Velocidad.cpp.o CMakeFiles/proyecto.dir/Luz.cpp.o CMakeFiles/proyecto.dir/Viento.cpp.o -o proyecto  -lsqlite3 
