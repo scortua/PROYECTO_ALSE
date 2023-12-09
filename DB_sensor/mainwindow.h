@@ -7,9 +7,12 @@
 #include <QtSql/QSqlDatabase>
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
+namespace Ui
+{
+    class MainWindow;
+}
 QT_END_NAMESPACE
-using Eigen :: MatrixXd;
+using Eigen ::MatrixXd;
 
 class MainWindow : public QMainWindow
 {
@@ -25,7 +28,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QTimer *timer;  // Objeto QTimer
+    QTimer *timer; // Objeto QTimer
     QSqlDatabase db;
 };
 #endif // MAINWINDOW_H
