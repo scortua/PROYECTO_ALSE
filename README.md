@@ -1,39 +1,41 @@
-> .[!NOTE].
-> # PROYECTO_ALSE
-Proyecto de santiago cortes tovar y juan andres abella ballen para usar C/C++, sqlite, git, git hub, cmake, Qt5
+# PROYECTO_ALSE
 
-Se crea una clase padre sensor para que la hereden los 6 sensores con atributos y en gran parte metodos iguales
+Proyecto desarrollado por Santiago Cortes Tovar y Juan Andrés Abella Ballen, utilizando C/C++, SQLite, Git, GitHub, CMake y Qt5.
 
-> .[!IMPORTANT].
-> 1. clase TEMPERATURA que va desde 10°C a 45°C
-> 2. clase HUMEDAD que va desde 0% a 100%
-> 3. clase VELOCIDAD que va desde 0 m/s a 40 m/s
-> 4. clase DIRECCION DEL VIENTO que va desde -180° a 180° Norte
-> 5. clase PRECIPITACION que va desde 0 mm a 50 mm
-> 6. clase INTENSIDAD DE LUZ que va desde 0 a 2000 lumenes
+> **Nota:** Este proyecto tiene como objetivo utilizar C/C++, SQLite, Git, GitHub, CMake y Qt5.
 
-> .[!WARNING].
-> Ahora todas van a medir un numero de mediciones a x tiempo que va de 5 a 20 segundos:
-> Promedio x mediciones en 1 minuto
-> Maxima medicion de x medidas en 1 minuto
-> Minima medicion de x medidas en 1 minuto
-> subir cada dato a una base de datos con la fecha en la que se tomaron los datos
+## Descripción del Proyecto
 
+Se ha creado una clase base llamada "Sensor" que será heredada por los siguientes 6 sensores. Estos sensores comparten atributos y métodos similares.
 
-muestra cada 5 seg son 12 muestras
-muestra cada 6 seg son 10 muestras
-muestra cada 7 seg son 9 muestras
-muestra cada 8 seg son 8 muestras
-muestra cada 9 seg son 7 muestras
-muestra cada 10 seg son 6 muestras
-muestra cada 11 seg son 5 muestras
-muestra cada 12 seg son 5 muestras
-muestra cada 13 seg son 4 muestras
-muestra cada 14 seg son 4 muestras
-muestra cada 15 seg son 4 muestras
-muestra cada 16 seg son 3 muestras
-muestra cada 17 seg son 3 muestras
-muestra cada 18 seg son 3 muestras
-muestra cada 19 seg son 3 muestras
-muestra cada 20 seg son 3 muestras
+> **Importante:** A continuación se describen los sensores y sus respectivos rangos de medición.
 
+### Sensores
+
+1. **Temperatura**: Rango de medición: 10°C a 45°C.
+2. **Humedad**: Rango de medición: 0% a 100%.
+3. **Velocidad**: Rango de medición: 0 m/s a 40 m/s.
+4. **Dirección del Viento**: Rango de medición: -180° a 180° (Norte).
+5. **Precipitación**: Rango de medición: 0 mm a 50 mm.
+6. **Intensidad de Luz**: Rango de medición: 0 a 2000 lúmenes.
+
+> **Advertencia:** Todas las mediciones se realizarán a intervalos regulares y se almacenarán en una base de datos junto con la fecha de captura de los datos.
+
+#### Ejemplos de Muestras
+
+- Cada 5 segundos: 12 muestras
+- Cada 6 segundos: 10 muestras
+- Cada 7 segundos: 9 muestras
+- Cada 8 segundos: 8 muestras
+- Cada 9 segundos: 7 muestras
+- Cada 10 segundos: 6 muestras
+- Cada 11 segundos: 5 muestras
+- Cada 12 segundos: 5 muestras
+- Cada 13 segundos: 4 muestras
+- Cada 14 segundos: 4 muestras
+- Cada 15 segundos: 4 muestras
+- Cada 16 segundos: 3 muestras
+- Cada 17 segundos: 3 muestras
+- Cada 18 segundos: 3 muestras
+- Cada 19 segundos: 3 muestras
+- Cada 20 segundos: 3 muestras
