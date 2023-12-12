@@ -42,8 +42,7 @@ MatrixXd MainWindow::abrir_db()
 
     db = QSqlDatabase::addDatabase("QSQLITE"); // agrega la base de datos a qt
     db.setDatabaseName("../db_name.db");       // crea una conexion con la base de datos
-
-    if (db.open()) // abre la base de datos
+    if (db.open())                             // abre la base de datos
     {
         qDebug() << "Base de datos abierta";
     }
@@ -51,10 +50,8 @@ MatrixXd MainWindow::abrir_db()
     {
         qDebug() << "Error al abrir la base de datos";
     }
-
     QString consulta = "SELECT MINIMO, PROMEDIO, MAXIMO FROM (SELECT ID, MINIMO, PROMEDIO, MAXIMO FROM sensores_pc ORDER BY ID DESC LIMIT 6) ORDER BY ID ASC";
     QSqlQuery query(db); // Asigna la conexión a la consulta
-
     if (query.prepare(consulta))
     {
         if (query.exec())
@@ -70,15 +67,12 @@ MatrixXd MainWindow::abrir_db()
     {
         qDebug() << "Error al preparar la consulta";
     }
-
     for (int i = 0; i < 6; i++)
     {
-        query.next();
-        R.row(i) << query.value(0).toDouble(), query.value(1).toDouble(), query.value(2).toDouble();
+        query.next();                                                                                // Avanza a la siguiente fila
+        R.row(i) << query.value(0).toDouble(), query.value(1).toDouble(), query.value(2).toDouble(); // Asigna los valores de la fila a la matriz
     }
-
     db.close(); // Cierra la conexión
-
     return R;
 }
 
