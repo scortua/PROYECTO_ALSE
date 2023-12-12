@@ -1,8 +1,10 @@
+>.[!NOTE].
 # PROYECTO_ALSE
 Proyecto de santiago cortes tovar y juan andres abella ballen para usar C/C++, sqlite, git, git hub, cmake, Qt5
 
 Se crea una clase padre sensor para que la hereden los 6 sensores con atributos y en gran parte metodos iguales
 
+>.[!IMPORTANT].
 1. clase TEMPERATURA que va desde 10°C a 45°C
 
 2. clase HUMEDAD que va desde 0% a 100%
@@ -15,6 +17,7 @@ Se crea una clase padre sensor para que la hereden los 6 sensores con atributos 
 
 6. clase INTENSIDAD DE LUZ que va desde 0 a 2000 lumenes
 
+>.[!WARNING].
 ahora todas van a medir un numero de mediciones a x tiempo que va de 5 a 20 segundos:
 Promedio x mediciones en 1 minuto
 Maxima medicion de x medidas en 1 minuto
