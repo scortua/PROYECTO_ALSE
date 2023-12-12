@@ -1,28 +1,23 @@
-.[!NOTE].
-# PROYECTO_ALSE
+>.[!NOTE].
+># PROYECTO_ALSE
 Proyecto de santiago cortes tovar y juan andres abella ballen para usar C/C++, sqlite, git, git hub, cmake, Qt5
 
 Se crea una clase padre sensor para que la hereden los 6 sensores con atributos y en gran parte metodos iguales
 
-.[!IMPORTANT].
-1. clase TEMPERATURA que va desde 10°C a 45°C
+>.[!IMPORTANT].
+>1. clase TEMPERATURA que va desde 10°C a 45°C
+>2. clase HUMEDAD que va desde 0% a 100%
+>3. clase VELOCIDAD que va desde 0 m/s a 40 m/s
+>4. clase DIRECCION DEL VIENTO que va desde -180° a 180° Norte
+>5. clase PRECIPITACION que va desde 0 mm a 50 mm
+>6. clase INTENSIDAD DE LUZ que va desde 0 a 2000 lumenes
 
-2. clase HUMEDAD que va desde 0% a 100%
-
-3. clase VELOCIDAD que va desde 0 m/s a 40 m/s
-
-4. clase DIRECCION DEL VIENTO que va desde -180° a 180° Norte
-
-5. clase PRECIPITACION que va desde 0 mm a 50 mm
-
-6. clase INTENSIDAD DE LUZ que va desde 0 a 2000 lumenes
-
-.[!WARNING].
-ahora todas van a medir un numero de mediciones a x tiempo que va de 5 a 20 segundos:
-Promedio x mediciones en 1 minuto
-Maxima medicion de x medidas en 1 minuto
-Minima medicion de x medidas en 1 minuto
-subir cada dato a una base de datos con la fecha en la que se tomaron los datos
+>.[!WARNING].
+>ahora todas van a medir un numero de mediciones a x tiempo que va de 5 a 20 segundos:
+>Promedio x mediciones en 1 minuto
+>Maxima medicion de x medidas en 1 minuto
+>Minima medicion de x medidas en 1 minuto
+>subir cada dato a una base de datos con la fecha en la que se tomaron los datos
 
 
 muestra cada 5 seg son 12 muestras
